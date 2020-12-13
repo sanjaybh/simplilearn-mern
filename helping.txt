@@ -18,3 +18,157 @@ This info can be verified and trusted because it is digitally signed. JWT can be
 
 
 #3. MongoDB is a cross-platform, document-oriented database that provides, high performance, high availability and easy scalability
+
+
+Interview Questions
+===================
+What is Node.js?
+How does NodeJS works?
+Where can we use it.
+	- Web application
+	- Distributied System
+	- Network Applications
+# What do you understand by the term I/O
+# Difference between frontend and backend development
+# What is NPM ?
+	> search.nodejs.org
+# What are modules in NodeJS
+# Some of the core modules are
+	- http, util, fs, url, querystring, stream, zlib
+# why is Node being preferred over other backend technologies like Java and PHP
+ - NPM has over 50,000 bundles for at the developers disposal
+ - Perfect for data intensive, real-time web applications as Node.js never waits for an API to return data
+ - Better synchronization of code between server and client due to same code base
+ - Easy for web developers to start using Nodejs in their projects as it is a JS library
+
+# Which db is more popularly used with Node
+MongoDB
+# Popular libraries used in Node
+Express, mongoose
+
+# Pros and Cons of Node
+Pros 
+- fast processing and event based model
+- Using JS as it is easy to learn and many developers out there
+- NPM has 50,000 packages to help developers to go fast
+- Best suited for streaming huge amounts of data and I/O intensive operations
+
+Cons 
+- not suitable for heavy computational tasks
+- Using callback is complex since you end up with many nested callbacks
+- working with relational db is not a good option for node
+- Since node is single threaded, CPU intensive tasks is not its strong suit
+
+# how to import external libraries
+ - var http = require('http')
+
+# Event driven programming means ?
+# Event Loop
+# Event Emitter
+# 2 typs of API functions
+ - Asynchronous, non-blocking functions
+ - Synchronous, blocking functions
+
+# Package.json file ?
+# how to use URL module ?
+var url = require('url')
+var adrs = "https://localhost:8080/default.htlm?yr=2008&month=mar";
+var que = url.parse(adrs, true)
+console.log(que.host, que.pathname, que.search)
+
+var quedata = que.query;
+console.log(quedata.month)
+
+# What is Express JS
+# What are Streams ?
+ - Readable, Writable, Duplex, Transform
+
+# install, update, delete a dependency
+ - npm install <pkg>
+ - npm update
+ - npm uninstall <pkg>
+
+
+# Explain asynchronous and non-blocking API in Node
+# How do we implement async in Node
+
+async function func1(req, res){
+	let res = await request.get('http://localhost:3000');
+	if(res.err){ console.log('error') }
+	else { console.log('fetched response');
+}
+
+# module.exports ?
+# callback ?
+
+
+#REPL - Read Eval Print Loop is a computer env like window console where a command is entered, and system responds with an output.
+- Read :- Reads users input, parses the input into JS data structure and stores in memory
+- Eval :- Takes and evaluates the data structure
+- Print :- Prints the result
+- Loop :- Loops the above command until user presses ctrl-c twice
+
+# Control flow functions and how it controls the functions call
+- control the order of execution
+- Collect data
+- Limit concurrency
+- Call the next step in a program
+
+
+# fork() and spawn() methods
+fork 
+- is a particular case of spawn() that generates a new instance of a V8 engine
+- Multiple workers run on a single node code base for multiple tasks
+
+spawn
+- launches a new process with the available set of commands
+- This method dosent generate a new V8 instance and only a single copy of the node module is active on the processor
+
+# Buffer Class in Node ?
+
+- buffer class stores raw data similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap
+
+- buffer class is used because pure JS is not compatible with binary data
+
+# Piping ?
+- is a mechanism to connect output of one stream to another stream
+- it is normally used to get data from one stream and to pass output of that stream to another stream
+
+# read/write flags operation in file
+r, r+, w, w+, a, a+
+
+# I/O files
+
+# Callback hell ?
+
+# Reactor Pattern in nodejs
+ - concept of non-blocking I/O operations
+ - This pattern provides a handler that is associated with each I/O operation and as soon as an I/O request is generated, it is then submitted to a demultiplexer
+
+# test pyramid in node js
+- Unit test
+- Integrations
+- End to end tests
+
+# exit codes of node
+- Uncaught fatal exception
+- Unused
+- Fatal Error
+- Internal Exception handler runtime failure
+- Internal JS evaluation failure
+
+# Middleware in Node
+# http request
+POST, GET, HEAD, DELETE
+
+# How to connect MongoDB databse with Node\
+# what is the use of NODE_ENV ? 
+env variable that stands for node env in express server
+its how we set and detect which env we are in
+ - export NODE_ENV=production (to set an environment)
+
+#timing feature 
+setTimeout/clearTimeout
+setInterval/clearInterval
+setImmediate/clearImmediate
+
