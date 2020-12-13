@@ -1,15 +1,14 @@
 {
   "name": "simplilearn",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is just the grass root level of knowledge gainer",
   "main": "index.js",
   "scripts": {
     "startdb": "C:\\Users\\sanjay\\mongodb\bin\\mongod.exe --dbpath=C:\\Users\\sanjay\\mongodb-data",
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["API", "MERN", "api methods"],
+  "author": "Sanjay Bhan",
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
