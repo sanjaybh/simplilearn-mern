@@ -3,6 +3,8 @@
 <form action="/student" method="POST" autocomplete="off">
     <input type="hidden" name="_id" value="{{student._id}}">
 
+    <div class="{{formFieldClass}}" role="alert">{{formFieldsError}}</div>
+
     <div class="form-group">
         <label>Full Name</label>
         <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{student.fullName}}">

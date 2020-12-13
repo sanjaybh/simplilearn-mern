@@ -7,14 +7,21 @@
     "startdb": "C:\\Users\\sanjay\\mongodb\bin\\mongod.exe --dbpath=C:\\Users\\sanjay\\mongodb-data",
     "dev": "nodemon server.js"
   },
-  "keywords": ["API", "MERN", "api methods"],
+  "keywords": [
+    "API",
+    "MERN",
+    "api methods"
+  ],
   "author": "Sanjay Bhan",
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.8.0",
     "handlebars": "^4.7.6",
     "json": "^10.0.0",
     "jsonwebtoken": "^8.5.1",

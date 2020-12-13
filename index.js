@@ -13,6 +13,7 @@ const handlebars = require("handlebars")
 const exphbs = require("express-handlebars")
 const { allowInsecurePrototypeAccess} = require("@handlebars/allow-prototype-access")
 
+
 //const bodyparser = require("body-parser")
 //var json = require('json')
 //var logger = require('logger')
@@ -34,8 +35,7 @@ app.get('/', (req, res) =>{
             <a href='/api/movies'>Movies</a> |          
             <a href='/student/'> Database</a> | 
             <a href='/logout'>Logout</a>
-        </h3>
- 
+        </h3> 
     `)
     res.end()
 })
@@ -59,8 +59,6 @@ app.set('views', path.join(__dirname, '/views/layouts/'))
 //http://localhost:3000/api/users/1
 
 //## Base request, welcome screen
-
-
 //Login api
 app.post('/login', (req, res) => {
     const user = {
@@ -89,9 +87,6 @@ app.use('/api/movies', require('./routes/api/movies'))
 
 
 var server = app.listen(PORT, () => {
-    //var host = server.address().address
-    //var port = server.address().host
-    //${host} - ${port}
     console.log(`Server is running on port ${PORT} `)
 })
 
